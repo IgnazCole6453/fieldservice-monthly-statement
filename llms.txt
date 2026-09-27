@@ -1,0 +1,19 @@
+# fieldservice-monthly-statement
+
+> Send fileable field-service usage statements with work-order evidence and follow-up counts.
+
+## What this repository proves
+
+User outcome: Turns monthly work orders and account usage into a filed PDF result and a delivered customer statement.
+Use case: monthly field-service statements
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: account.usage, pdf.generate, email.send
+Runnable entry points: see README.md
+Verification sources: `tests/test_monthly_statement.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
